@@ -56,7 +56,7 @@ class Blog(AppBase):
         # browser.find_element_by_name("password").send_keys(Keys.ENTER)
         time.sleep(2)
 
-        return "OK!!"
+        return "blog"
 
 
 if __name__ == "__main__":
