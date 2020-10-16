@@ -10,7 +10,7 @@ class Blog(AppBase):
 
         super().__init__(redis, logger, console_logger)
 
-    async def sendBlog(self, title, context):
+    async def sendBlog(self,myurl,title, context):
         try:
             from selenium import webdriver
             from selenium.webdriver.common.keys import Keys
@@ -26,7 +26,7 @@ class Blog(AppBase):
         browser = webdriver.Chrome(chrome_options=option)
         # browser=webdriver.Chrome()
 
-        browser.get("http://10.245.142.98:83/wp-login.php")
+        browser.get(myurl)#"http://10.245.142.98:83/wp-login.php"
         # browser.execute_script("document.body.style.zoom='0.5'")#缩放0.5
         browser.set_window_size(1920, 1080)
         browser.maximize_window()
