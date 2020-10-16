@@ -11,6 +11,13 @@ actions:
   - name: sendBlog
     description: send a blog
     parameters:
+      - name: myurl
+        description: myurl
+        required: true
+        multiline: false
+        example: "http://10.245.142.98:83/wp-login.php"
+        schema:
+          type: string
       - name: title
         description: title of blog
         required: true
