@@ -32,7 +32,7 @@ class Blog(AppBase):
         browser.maximize_window()
         time.sleep(1)
         browser.find_element_by_name('log').send_keys('kuroneko')
-        browser.find_element_by_name('pwd').send_keys('wangxiao')
+        browser.find_element_by_name('pwd').send_keys('kuroneko')
         browser.find_element_by_name('wp-submit').click()
         time.sleep(2)
         browser.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/ul/li[3]/a/div[3]').click()
